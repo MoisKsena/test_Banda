@@ -23,8 +23,8 @@
 }
 
 .wrapper {
-  max-width: 90%;
-  min-width: 320px;
+  display: flex;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -173,7 +173,7 @@
 .banner__slide {
   width: 100%;
   height: inherit;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 @media screen and (min-width: 560px) {
@@ -188,6 +188,10 @@
     position: relative;
   }
 
+  .banner__item:not(:last-child) {
+    margin-right: 40px;
+  }
+
   .banner__text-title {
     padding-left: 0;
   }
@@ -195,6 +199,10 @@
   .banner__text-order {
     padding-bottom: 0;
     margin: 0;
+  }
+
+  .banner__slide {
+    object-fit: cover;
   }
 
   .banner__btn-price {
