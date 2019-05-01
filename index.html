@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/jquery.downCount.js" type="text/javascript"></script>
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+    // здесь нужная дата в формате гггг-мм-дд чч:мм:сс
+    var deadline='2019-05-01 12:12:12';
+  </script>
+
+  <main class="wrapper">
+    <section class="banner">
+      <h2 class="banner__title">Акции и специальные предложения</h2>
+      <div class="banner__box">
+        <div class="banner__item">
+          <a class="banner__item-link" href="#">
+            <div class="banner__image">
+              <img class="image" src="image/Кубометрия-3Д_обложка.png" alt="Кубометрия-3Д_обложка">
+            </div>
+            <div class="banner__image-sticker"> 
+              <img class="image" src="image/label_stik-01.png" alt="Кубометрия-3Д_обложка">
+            </div>
+          </a>
+          <div class="banner__text">
+            <h3 class="banner__text-title">Предзаказ&nbsp;тетради  «Кубометрия 3D»</h3>
+            <div class="banner__text-counter">
+              <p class="banner__text-signature">Акция заканчивается 14 апреля. Через:</p>
+              <div class="banner__counter">
+
+                  <ul class="countdown">
+                    <li>
+                        <span class="hours">00</span>
+                        <div class="hours_ref">часы</div>
+                    </li>
+                    <li class="seperator">:</li>
+                    <li>
+                        <span class="minutes">00</span>
+                        <div class="minutes_ref">мин</div>
+                    </li>
+                    <li class="seperator">:</li>
+                    <li>
+                        <span class="seconds">00</span>
+                        <div class="seconds_ref">сек</div>
+                    </li>
+                  </ul>
+
+              </div>
+              <div class="banner__text-order">
+                <div class="banner__text-price">
+                  <p class="banner__text-price-price">9 999 &#8381;</p>
+                  <p class="banner__text-price-line">9 999 &#8381;</p>
+                </div>
+                <button class="banner__btn banner__btn-price">подробнее</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#"><div class="banner__item">
+          
+              <img class="banner__slide" src="image/banner_2.png" alt="Кубометрия-3Д_обложка">
+
+          <button class="banner__btn banner__btn-slide">подробнее</button>
+        </div></a>
+      </div>
+    </section>
+  </main>
+
+  <script type="text/javascript">
+  $('.countdown').downCount({
+    date: deadline,
+  },
+  function(){
+      /* действие после завершения таймера */
+      alert("Время истекло!");
+  });
+  </script> 
+  
+</body>
+</html>

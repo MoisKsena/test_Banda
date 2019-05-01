@@ -1,0 +1,255 @@
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url('../fonts/HelveticaNeueCyr-Roman.woff2') format('woff2'),
+      url('../fonts/HelveticaNeueCyr-Roman.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url('../fonts/HelveticaNeueCyr-Bold.woff2') format('woff2'),
+      url('../fonts/HelveticaNeueCyr-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url('../fonts/HelveticaNeueCyr-Thin.woff2') format('woff2'),
+      url('../fonts/HelveticaNeueCyr-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+.wrapper {
+  max-width: 90%;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.banner { 
+  display: flex; 
+  height: 440px;
+  flex-direction: column;
+  margin: 0 auto;
+  
+}
+
+.banner__title {
+  display: flex;
+  font-family: 'HelveticaNeueCyr';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 40px;
+}
+
+.banner__box {
+  display: flex;
+  max-width: 1170px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner__item {
+  display: flex;
+  margin-bottom: 40px;
+  max-width: 560px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #ffd92f;
+  position: relative;
+}
+
+.banner__item-link {
+  position: relative;
+  margin-right: 40px;
+}
+
+.banner__image {}
+
+.image {
+  margin: 12px;
+}
+
+.banner__image-sticker {
+  position: absolute;
+  top: -10px;
+  right: -40px;
+}
+
+.banner__text {
+  padding-right: 20px;
+}
+
+.banner__text-title {
+  margin: 0;
+  padding-top: 20px;
+  padding-left: 10px;
+  font-family: 'HelveticaNeueCyr';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 25px;
+  line-height: 1.5;
+}
+
+.banner__text-counter {
+  margin: 0;
+  text-align: center;
+}
+
+
+.banner__text-signature {
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 600;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.banner__counter {
+
+}
+
+.banner__text-order {
+  display: flex;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0 10px;
+}
+
+.banner__text-price {
+  margin: 0;
+  padding: 0;
+}
+
+.banner__text-price-price {
+  margin: 0;
+  padding: 0;
+  color: #ff0072;
+  font-family: 'HelveticaNeueCyr';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.banner__text-price-line {
+  margin: 0;
+  padding: 0;
+  text-decoration: line-through;
+  font-family: 'HelveticaNeueCyr';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.banner__btn {
+  width: 140px;
+  height: 44px;
+  position: absolute;
+  background-color: #ff0072;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  font-family: 'HelveticaNeueCyr';
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.banner__btn-price {
+  bottom: 10px;
+  right: 0;
+}
+
+.banner__btn-slide {
+  bottom: 22px;
+  right: 30px;
+}
+
+.banner__slide {
+  width: 100%;
+  height: inherit;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 560px) {
+  .banner__item {
+    display: flex;
+    margin-bottom: 40px;
+    height: 295px;
+    max-width: 560px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    background-color: #ffd92f;
+    position: relative;
+  }
+
+  .banner__text-title {
+    padding-left: 0;
+  }
+
+  .banner__text-order {
+    padding-bottom: 0;
+    margin: 0;
+  }
+
+  .banner__btn-price {
+    bottom: 0;
+    right: 0;
+  }
+}
+
+/* счетчик времени */
+
+.countdown{
+  list-style:none;
+  margin:6px 0 0 0;
+  padding:0;
+  display: block;
+}
+    
+.countdown li{display: inline-block;}
+
+/* здесь дни, часы, минуты, секунды */
+.countdown li span{
+  color:#000;
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 600;
+  font-style: normal;
+  font-size: 30px;
+  display:inline-block;
+}
+  
+/* разделители . и : */	
+.countdown li.seperator {
+  color:#000;
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 600;
+  font-style: normal;
+  font-size: 30px;
+  vertical-align:top;
+  }
+
+.seperator {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.countdown span {
+  padding: 5px;
+  background-color: #fff;
+}
+    
+.countdown li div {
+  margin: 0;
+  color: #000;
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
