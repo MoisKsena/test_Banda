@@ -30,7 +30,6 @@
 
 .banner { 
   display: flex; 
-  height: 440px;
   flex-direction: column;
   margin: 0 auto;
   
@@ -45,8 +44,9 @@
 }
 
 .banner__box {
-  display: flex;
+  display: block;
   max-width: 1170px;
+  margin: 0 auto;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -176,7 +176,12 @@
   object-fit: contain;
 }
 
-@media screen and (min-width: 560px) {
+@media screen and (min-width: 768px) {
+  .banner__box {
+    display: flex;
+    margin: 0 auto;
+  }
+
   .banner__item {
     display: flex;
     margin-bottom: 40px;
@@ -210,6 +215,7 @@
     right: 0;
   }
 }
+
 
 /* счетчик времени */
 
